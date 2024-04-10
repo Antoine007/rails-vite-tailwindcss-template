@@ -10,7 +10,7 @@ def add_template_repository_to_source_path
     at_exit { FileUtils.remove_entry(tempdir) }
     git clone: [
       '--quiet',
-      'https://github.com/IsraelDCastro/rails-vite-tailwindcss-template.git',
+      'https://github.com/Antoine007/rails-vite-tailwindcss-template.git',
       tempdir
     ].map(&:shellescape).join(' ')
 
